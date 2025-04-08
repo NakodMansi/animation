@@ -1,38 +1,317 @@
-.App {
-  text-align: center;
+*{
+  padding: 0px;
+  margin: 0px;
+  /* box-sizing: border-box; */
 }
+@media (max-width: 767px){
+  .main-div{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .parent-box{
+    width: 95%;
+    height: 80%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+     /* layout */
+     display: flex;
+     padding: 60px 24px;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 12px;
+ 
+     /* style */
+     border-radius: 12px;
+     /* border: 2px solid #0E0725; */
+     background: var(--Brand-Colors-White-white-50, #FEFEFE);
+     box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.06) inset, 6px 6px 12px 0px rgba(0, 0, 0, 0.08); 
+  }
+
+  .parent-box .heading-and-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .parent-box .heading-and-text .heading{
+    /* layout */
+    align-self: stretch;
+
+    /* typo */
+    color: var(--Brand-Colors-Grey-grey-500, #323232);
+    text-align: center;
+    
+    /* GT Walsheim/24px: Bold L */
+    font-family: "GT Walsheim Trial";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px; /* 133.333% */
+  }
+
+  
+  .parent-box .heading-and-text .text{
+    /* layout */
+    align-self: stretch;
+
+    /* typo */
+    color: var(--Brand-Colors-Grey-grey-400, #5B5B5B);
+    text-align: center;
+    
+    /* Inter/14px: Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+
+  
+  .parent-box .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+  }
+
+  .parent-box .content .heading-and-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    align-self: stretch;
+  }
+
+  .parent-box .content .heading-and-text .heading{
+    /* layout */
+    align-self: stretch;
+
+    /* typo */
+    color: var(--Grays-Black, var(--Grays-Black, #000));
+    text-align: center;
+    font-family: "GT Walsheim Trial";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px; /* 125% */
+  }
+
+  .parent-box .content .heading-and-text .text{
+    /* layout */
+    align-self: stretch;
+
+    /* typo */
+    color: var(--Brand-Colors-Grey-grey-400, #5B5B5B);
+    text-align: center;
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+  }
+
+  .child-box{
+    width: 80%;
+    height: auto;
+  }
+
+  .main-div .child-box{
+    /* layout */
+    display: flex;
+    padding: 32px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+
+    /* style */
+    border-radius: 12px;
+    border: 2px solid var(--Sea-Green-Gradient, #88D1D8);
+    background: linear-gradient(270deg, rgba(136, 209, 216, 0.14) 0%, rgba(200, 238, 241, 0.14) 99.54%);
+    backdrop-filter: blur(30px) !important;
+  }
+
+  .main-div .child-box .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+  }
+
+  .main-div .child-box .card-content .card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+  }
+  
+  .main-div .child-box .card-content .card-header .heading{
+    /* layout */
+    align-self: stretch;
+
+    /* typo */
+    color: var(--Brand-Colors-Grey-grey-500, #323232);
+    text-align: center;
+    
+    /* Inter/20px: Bold */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+  }
+  
+  .main-div .child-box .card-content .card-header .text{
+    /* layout */
+    align-self: stretch;
+
+    /* typo */
+    color: var(--Brand-Colors-Grey-grey-400, #5B5B5B);
+    text-align: center;
+
+    /* Inter/14px: Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+  
+  .main-div .child-box .card-content .card-metrics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+  .main-div .child-box .card-content .card-metrics .metric{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+
+  
+  .main-div .child-box .card-content .card-metrics .metric .heading{
+    /* layout */
+    align-self: stretch;
+
+    /* typo */
+    color: var(--Grays-Black, var(--Grays-Black, #000));
+    text-align: center;
+    
+    /* Inter/20px: Bold */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+  }
+
+  .main-div .child-box .card-content .card-metrics .metric .text{
+    /* layout */
+    align-self: stretch;
+
+    /* typo */
+    color: var(--Brand-Colors-Grey-grey-400, #5B5B5B);
+    text-align: center;
+    
+    /* Inter/16px: Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  
+  .main-div .child-box .btn{
+    /* layout */
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    /* style */
+    border-radius: 6px;
+    background: var(--Brand-Colors-Grey-grey-500, #323232);
+  }
+
+  .main-div .child-box .btn{
+    color: #FFF !important;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 157.143% */
+  }
+
+  .third-box{
+    margin-bottom: 22vh;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media (min-width: 768px) and (max-width: 1023px){
+  .parent-box{
+    width: 80%;
+    height: 80%;  
+    border-radius: 20px;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
-  to {
-    transform: rotate(360deg);
+
+  .child-box{
+    width: 60%;
+    height: 60vh;
+  }
+
+  .third-box{
+    margin-bottom: 20vh;
+  }
+}
+
+@media (min-width: 1023px){
+  .main-div{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .parent-box{
+    width: 95%;
+    height: 90%;  
+    /* border-radius: 20px; */
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .child-box{
+    width: 80%;
+    height: 60vh;
+  }
+
+  .third-box{
+    margin-bottom: 20vh;
   }
 }
