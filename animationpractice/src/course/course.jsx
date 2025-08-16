@@ -137,22 +137,7 @@ const Course = () =>{
 
     return (
     <div className='main-div'>
-        {/* 1st div */}
-        <div className="intro-content">
-            <div className="heading-and-text">
-                <h1 className="heading">Your Gateway to Global Education Starts Here!</h1>
-                <p className="text">Master IELTS with expert-led training.</p>
-            </div>
-            <video poster="./assets/card1.svg"></video>
-        </div>
-
-        {/* 2nd div */}
-        <div className="title">
-            <h1 className="heading">Why Choose EEC  for Test Prep?</h1>
-            <p className="text">EEC Global is a trusted leader in IELTS coaching. Get personalized 1:1 coaching with daily speaking and writing practice for targeted improvement. Plus, with 26+ centers across Gujarat, you can learn flexibly at your convenience.
-            <br />
-            📢 Join EEC and achieve your dream IELTS score!</p>
-        </div>
+       
 
         {/* 3rd div */}
         <motion.div style={{backgroundImage: bgColor,}} className="parent-card" >
@@ -170,7 +155,7 @@ const Course = () =>{
             </div>
         </motion.div>
 
-        <div className="cards">
+        <div className="cards" style={{paddingTop: "400px"}}>
             {Data.map((content)=>(
             <motion.div key={content.id} className={`card${content.id} child-card`} >
                 <div className='card-content'>
@@ -196,131 +181,7 @@ const Course = () =>{
             ))}
         </div>
 
-        {/* 4th div */}
-        <div className="info-and-images">
-            <div className="heading-and-text">
-                <h1 className="heading">Where do our students go next?</h1>
-                <p className="text">Our alumni have successfully progressed to prestigious universities around the world.  Here's a glimpse of institutions where our students continue their academic journey.</p>
-            </div>
-            <div className="items">
-                <div className="logo"></div>
-                <div className="logo"></div>
-            </div>
-        </div>
-
-        {/* 5th div */}
-        <div className="section5">
-            <div className="heading-and-text">
-                <h1 className="heading">Extensive Library & Study Resources</h1>
-                <p className="text">Gain unlimited library access with 13 expert-curated books, video lectures, and digital notes for in-depth IELTS 
-                preparation—learn anytime, anywhere!</p>
-            </div>
-            <div className="testimonial">
-                <div className="cards"></div>
-                <div className="btns">
-                    <div className="left-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M15.8334 10.0001H4.16675M4.16675 10.0001L10.0001 15.8334M4.16675 10.0001L10.0001 4.16675" stroke="#767676" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div className="right-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M4.16675 10.0001H15.8334M15.8334 10.0001L10.0001 4.16675M15.8334 10.0001L10.0001 15.8334" stroke="#767676" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        {/* 6th div */}
-        <div className="speaking-and-writing">
-            <div className="heading-and-text">
-                <h1>Speaking & Writing Assessment Sheets</h1>
-                <p>Track your progress, predict your band score, and improve with expert feedback.</p>
-            </div>
-            <div className="cards">
-                {speakingCrads.map((content)=>(
-                    <div className="card" key={content.id}>
-                        {/* <img src={}/> */}
-                        <div className="heading-and-text">
-                            <h2 className="heading">{content.heading}</h2>
-                            <p className="text">{content.text}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-
-        {/* 7th div */}
-        <div className="section7">
-            <div className="content">
-                <div className="heading-and-text">
-                    <h1 className="heading">Experience Before You Commit – Attend a Free Demo Class!</h1>
-                    <p className="text">Get a firsthand experience of our expert-led sessions before enrolling. Meet your trainers, explore our teaching methods, and see if EEC Global is the right fit—no obligation, no pressure!</p>
-                </div>
-                <button className="btn" type="button">Book Your Free Demo Now</button>
-            </div>
-        </div>
-
-        {/* 8th div */}
-        <div className="section8">
-            <div className="heading-and-text">
-                <h1 className="heading">Meet Our IELTS Achievers</h1>
-                <p className="text">Join thousands of Band 7+ achievers with EEC Global’s expert training and proven strategies.</p>
-            </div>
-            <div className="images">
-                <div className="imgs"></div>
-                <div className="imgs"></div>
-            </div>
-        </div>
         
-        {/* 9th div */}
-        <div className="section9">
-            <div className="heading-and-text">
-                <h1 className="heading">Real Success Stories!</h1>
-                <p className="text">See how EEC Global has helped students achieve their dream IELTS scores with expert training and personalized guidance.</p>
-            </div>
-            <div className="text-and-images">
-                <div className="text-and-star">
-                    <div className="star-and-p">
-                        <div className="stars"></div>
-                        <p>Band 8.0</p>
-                    </div>
-                    <p className="descr">EEC Global’s structured approach and expert coaching made all the difference! The personalized 1:1 speaking sessions and AI-powered mock tests helped me boost my confidence. I scored Band 8.0 on my first attempt!</p>
-                </div>
-                <div className="images">
-                    {/* <img src={} />
-                    <img src={} />
-                    <img src={} /> */}
-                </div>
-                <div className="btns">
-                    <div className="left-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M15.8334 10.0001H4.16675M4.16675 10.0001L10.0001 15.8334M4.16675 10.0001L10.0001 4.16675" stroke="#767676" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div className="right-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M4.16675 10.0001H15.8334M15.8334 10.0001L10.0001 4.16675M15.8334 10.0001L10.0001 15.8334" stroke="#767676" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        {/* section 10 */}
-        <div className="section10">
-            <div className="heading-and-text">
-                <h1 className="heading">Stay Inspired – Follow Us on Instagram!</h1>
-                <p className="text">Tag us @EECGlobal and share your #IELTSSuccessStory for a chance to be featured!</p>
-            </div>
-            <div className="images">
-                {/* <img src={} className="img1"/>
-                <img src={} className="img2"/>
-                <img src={} className="img3"/>
-                <img src={} className="img4"/> */}
-            </div>
-        </div>
     </div>
     );
 }
